@@ -16,9 +16,17 @@
     color: white !important;
 }
 
+.card-title{
+    font-weight: bold !important;
+}
+
 .title-color {
     color: white;
     font-weight: bold;
+}
+
+.iten-heigth {
+    height: 10rem;
 }
 
 .text-color {
@@ -33,3 +41,52 @@
     border-radius:0 !important;
 }
 
+.navbar {
+    background-color: rgba(36, 36, 36, 0.7) !important; 
+    z-index: 1000; 
+}
+
+.font-color {
+    color: #ffffff !important;
+}
+
+.text-color-itens {
+    color: yellow !important;
+}
+
+.card-border {
+    border-radius: 0% !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+#title-news {
+    font-size: x-large !important;
+}
+
+.footer-itens {
+    color: white;
+}
+
+.font-color a {
+    color: white !important;
+    font-weight: bold;
+}
+
+#color-logo-yellow {
+    font-weight: bold;
+    color: yellow;
+}
+
+#color-logo-white {
+    font-weight: bold;
+    color: white;
+}
+
+@media ( max-width:1020px ) {
+    .iten-heigth{
+        height: 5rem;
+    }
+}

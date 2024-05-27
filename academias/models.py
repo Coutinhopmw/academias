@@ -30,3 +30,19 @@ class Usuarios(AbstractUser):
     
     class Meta:
         db_table = 'usuarios'
+
+class Produtos(models.Model):
+    Nome = models.CharField(max_length=255)
+    codigo = models.CharField(max_length=255)
+    capa = models.ImageField(upload_to='capa/', null=True, blank=True)
+    descricao =  models.CharField(max_length=255)
+    valor = models.FloatField(max_length=4)
+    quantidade_vendas = models.IntegerField(max_length=20)
+    slug = models.SlugField(unique=True, blank=True, null=True)
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.titulo)
+        super().save(*args, **kwargs)
+
+    class Meta:
+        db_table = 'Produtos'

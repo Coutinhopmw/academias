@@ -24,13 +24,9 @@ class Horarios(View):
     def get(self, request):
         return render(request, 'horarios.html')
 
-
-    # def post (self, request,*args, **kwargs):
-    # form = SignupForm(request.POST,request.FILES)
-    # if form.is_valid():
-    #     form.save()
-    #     return redirect('/login')
-    # return render(request,self.template_name,{'form':form})
+class Atendente(View):
+    def get(self, request):
+        return render(request, 'Atendente.html')
 
 class CadastroUsuario(View):
     

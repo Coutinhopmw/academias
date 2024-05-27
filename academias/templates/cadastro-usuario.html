@@ -5,39 +5,7 @@
 
 <body>
 
-  <section>
-    <div class="bg-color">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" id="color-logo-yellow" aria-current="page" href="#">PÁGINA INICIAL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="color-logo-white" href="loja">LOJA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="color-logo-white" href="#">PLANOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="color-logo-white" href="#">HORÁRIOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="color-logo-white" href="#">SOBRE NÓS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="color-logo-white" href="#">CONTATO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="color-logo-white" href="#">LOGIN</a>
-            </li>
-          </ul>
-        </div>
-    </div>
-    </nav>
-    </div>
-  </section>
+  {% include 'partials/header.html' %}
 
   <section>
     <div class="bg-color" style="height: 100vh; overflow-x: hidden;">
@@ -63,26 +31,21 @@
                         </div>
                         <div class="">
                           <label for="id_email" class="form-label" style="color: white;">EMAIL</label>
-                          <input type="email" class="form-control" id="id_email" name="email"
-                            aria-describedby="emailHelp" required>
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          <input type="email" class="form-control" id="id_email" name="email" aria-describedby="emailHelp" required>
                         </div>
                       </div>
                       <div class=" p-2">
                         <div class="">
                           <label for="id_nascimento" class="form-label" style="color: white;">DATA DE DASCIMENTO</label>
-                          <input type="text" class="form-control" id="id_nascimento" name="nascimento"
-                            placeholder="DD/MM/AAAA" required>
+                          <input type="text" class="form-control" id="id_nascimento" name="nascimento" placeholder="DD/MM/AAAA" required>
                         </div>
                         <div class="">
                           <label for="id_cpf" class="form-label" style="color: white;">CPF</label>
-                          <input type="text" class="form-control" id="id_cpf" name="cpf" placeholder="000.000.000-00"
-                            required>
+                          <input type="text" class="form-control" id="id_cpf" name="cpf" placeholder="000.000.000-00" required>
                         </div>
                         <div class="">
                           <label label for="id_telefone" class="form-label" style="color: white;">TELEFONE</label>
-                          <input type="text" class="form-control" id="id_telefone" name="telefone"
-                            placeholder="(00) 0000-0000" maxlength="14" required>
+                          <input type="text" class="form-control" id="id_telefone" name="telefone" placeholder="(00) 0000-0000" maxlength="14" required>
                         </div>
                       </div>
                     </div>

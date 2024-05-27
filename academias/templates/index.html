@@ -4,65 +4,36 @@
 <html lang="en">
 
 <body>
-    <section>
-        <div class="bg-color">
-          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Logo</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="color-logo-yellow" aria-current="page" href="#">PÁGINA INICIAL</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="{% url 'loja' %}">LOJA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="#">PLANOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="{% url 'horarios' %}">HORÁRIOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="#">SOBRE NÓS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="#">CONTATO</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="{% url 'login' %}">LOGIN</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+    
+  {% include 'partials/header.html' %}
 
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="{% static 'img/slide-01.jpg' %}" class="d-block w-100 carousel-itens " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="{% static 'img/slide-02.jpg' %}" class="d-block w-100 carousel-itens " alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="{% static 'img/slide-03.jpg' %}" class="d-block w-100 carousel-itens " alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'img/slide-01.jpg' %}" class="d-block w-100 carousel-itens " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/slide-02.jpg' %}" class="d-block w-100 carousel-itens " alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/slide-03.jpg' %}" class="d-block w-100 carousel-itens " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
 
     <section>

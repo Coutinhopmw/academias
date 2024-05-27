@@ -11,7 +11,6 @@
     <title>Academia</title>
 </head>
 <body>
-  
     <section>
         <div class="bg-color">
           <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -22,13 +21,13 @@
                     <a class="nav-link active" id="color-logo-yellow" aria-current="page" href="#">PÁGINA INICIAL</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="#">LOJA</a>
+                    <a class="nav-link" id="color-logo-white" href="{% url "loja" %}">LOJA</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" id="color-logo-white" href="#">PLANOS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="#">HORÁRIOS</a>
+                    <a class="nav-link" id="color-logo-white" href="{% url "horarios" %}">HORÁRIOS</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" id="color-logo-white" href="#">SOBRE NÓS</a>
@@ -37,7 +36,7 @@
                     <a class="nav-link" id="color-logo-white" href="#">CONTATO</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="color-logo-white" href="#">LOGIN</a>
+                    <a class="nav-link" id="color-logo-white" href="{% url "login" %}">LOGIN</a>
                   </li>
                 </ul>
               </div>
@@ -81,29 +80,29 @@
           </div>
           <div class="d-flex justify-content-evenly" style="height: fit-content; flex-direction: row; flex-wrap: wrap;">
             <div class="card m-2" style="width: 18rem; background-color: rgb(36, 36, 36);">
-              <img src="{% static 'img/icon-01.png' %}" class="card-img-top" alt="..." style="margin-top: -15%;">
-              <div class="card-body" style="margin-top: -15%;">
+              <img src="{% static 'img/icon-01.png' %}" class="card-img-top" alt="..." >
+              <div class="card-body" ">
                 <h5 class="card-title text-center">MUSCULAÇÃO</h5>
                 <p class="card-text text-center">Força e resistência se encontram no levantar de pesos.</p>
               </div>
             </div>
             <div class="card m-2" style="width: 18rem; background-color: rgb(36, 36, 36);">
-              <img src="{% static 'img/icon-03.png' %}" class="card-img-top" alt="..." style="margin-top: -15%;">
-              <div class="card-body" style="margin-top: -15%;">
+              <img src="{% static 'img/icon-03.png' %}" class="card-img-top" alt="..." >
+              <div class="card-body" ">
                 <h5 class="card-title text-center">KARATÊ</h5>
                 <p class="card-text text-center">Aprimorando corpo e mente através da disciplina e técnicas precisas.</p>
               </div>
             </div>
             <div class="card m-2" style="width: 18rem; background-color: rgb(36, 36, 36);">
-              <img src="{% static 'img/icon-02.png' %}" class="card-img-top" alt="..." style="margin-top: -25%;">
+              <img src="{% static 'img/icon-02.png' %}" class="card-img-top" alt="...">
               <div class="card-body" style="margin-top: -5%;">
                 <h5 class="card-title text-center">JIU-JÍTSU</h5>
                 <p class="card-text text-center">Arte de usar técnica e estratégia para superar desafios no solo.</p>
               </div>
             </div>
             <div class="card m-2" style="width: 18rem; background-color: rgb(36, 36, 36);">
-              <img src="{% static 'img/icon-04.png' %}" class="card-img-top" alt="..." style="margin-top: -15%;">
-              <div class="card-body" style="margin-top: -15%;">
+              <img src="{% static 'img/icon-04.png' %}" class="card-img-top" alt="..." >
+              <div class="card-body">
                 <h5 class="card-title text-center">MUAY THAY</h5>
                 <p class="card-text text-center">Arte marcial tailandesa que combina poder, técnica e disciplina.</p>
               </div>

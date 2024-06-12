@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+{% include 'partials/head.html' %}
+{% load static %}
+<html lang="en">
+
+<body>
+
+    {% include 'partials/header.html' %}
+
+    <section>
+        <div class="bg-color" style="height: 100vh; overflow-x: hidden;">
+            <div class="container-login justify-content-center w-100">
+                <div class="d-flex justify-content-center align-items-center w-100 d-flex justify-content-evenly" style="height: 100vh; flex-wrap: wrap;">
+                    <!-- <div class="card p-3 bg-body-secondary">
+                        <h5 class="card-title" style="color: black !important;">Ativar usuário</h5>
+                        <form method="post" enctype="multipart/form-data" action="{% url 'atendente' %}">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="id_nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="id_nome" name="nome">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+                        </form>
+                        <div class="">
+                            <table class="table text-center">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Fatura</th>
+                                    <th scope="col">Vencimento</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    {% if usuario_encontrado %}
+                                    <tr>
+                                      <td>{{ usuario_encontrado.nome }}</td>
+                                      <td>{{ usuario_encontrado.email }}</td>
+                                      <td>
+                                        {% if usuario_encontrado.status %}
+                                          Ativo
+                                        {% else %}
+                                          Inativo
+                                        {% endif %}
+                                      </td>
+                                      <td>{{ usuario_encontrado.pagamento|date:"d/m/Y" }}</td>
+                                      <td>{{ usuario_encontrado.renovacao|date:"d/m/Y" }}</td>
+                                    </tr>
+                                  {% endif %}
+                                </tbody>
+                              </table>
+                        </div>
+                    </div> -->
+                    <!-- <div class="card p-3 bg-body-secondary">
+                        <h5 class="card-title" style="color: black !important;">Cadastrar produto</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="id_nome" class="form-label">Nome do produto</label>
+                                <input type="text" class="form-control" id="id_nome" name="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="id_nome" class="form-label">Código</label>
+                                <input type="text" class="form-control" id="id_nome" name="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="id_nome" class="form-label">Descrição</label>
+                                <input type="text" class="form-control" id="id_nome" name="nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="id_valor" class="form-label">Valor</label>
+                                <input type="text" class="form-control" id="id_valor" name="valor">
+                            </div>
+                            <div class="mb-3">
+                                <label for="id_quantidade" class="form-label">Quantidade</label>
+                                <input type="text" class="form-control" id="id_quantidade" name="quantidade">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                              </div>
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+                        </form>
+                    </div> -->
+                    <!-- <div class="card p-3 bg-body-secondary">
+
+                        <h5 class="card-title" style="color: black !important;">Alertas</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="id_nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="id_nome" name="nome">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </form>
+                    </div> -->
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div class="option-icons">
+                            <a href="#" class="card-title text-center">Buscar cliente</a>
+                        </div>
+                    </div>
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="option-icons" style="margin-left: 3vh;">
+                            <a href="#" class="card-title text-center">Produtos</a>
+                        </div>
+                    </div>
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <div class="option-icons" style="margin-left: 3vh;">
+                            <a href="#" class="card-title text-center">Relatórios</a>
+                        </div>
+                    </div>
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <div class="option-icons" style="margin-left: 3vh;">
+                            <a href="#" class="card-title text-center">Profissinais</a>
+                        </div>
+                    </div>
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="option-icons" style="margin-left: 3vh;">
+                            <a href="#" class="card-title text-center">Horários</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'partials/footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

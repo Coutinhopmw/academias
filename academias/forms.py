@@ -31,3 +31,7 @@ class SignupForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields.pop('username', None)
+
+class LoginForm(forms.Form):
+    email = forms.EmailField(max_length=255)
+    password = forms.CharField(widget=forms.PasswordInput)

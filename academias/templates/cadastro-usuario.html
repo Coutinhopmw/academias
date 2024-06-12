@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% include 'partials/head.html' %}
+{% load static %}
+<html lang="en">
+
+<body>
+
+  {% include 'partials/header.html' %}
+
+  <section>
+    <div class="bg-color" style="height: 100vh; overflow-x: hidden;">
+      <div class="container-login" style="width: 100%;">
+        <div class="row justify-content-center mt-5">
+          <h2 class="text-center mt-5" style="color: yellow; font-weight: bold;">CADASTRO ALUNO</h2>
+          <div style="display: flex;  flex-wrap: wrap; justify-content: center;">
+            <div class="p-5" style="display: flex;  flex-wrap: wrap; justify-content: center;">
+
+              <div class="card" style="width: 100%; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+                <div class="card-body d-flex flex-row">
+                  <form method="post" enctype="multipart/form-data" action="{% url 'CadastroUsuario' %}">
+                    {% csrf_token %}
+                    <div class="d-flex flex-row flex-wrap">
+                      <div class="p-2">
+                        <div class="">
+                          <label for="id_nome" class="form-label" style="color: white;">NOME COMPLETO</label>
+                          <input type="text" class="form-control" id="id_nome" name="nome" required>
+                        </div>
+                        <div class="">
+                          <label for="id_endereco" class="form-label" style="color: white;">ENDEREÇO </label>
+                          <input type="text" class="form-control" id="id_endereco" name="endereco" required>
+                        </div>
+                        <div class="">
+                          <label for="id_email" class="form-label" style="color: white;">EMAIL</label>
+                          <input type="email" class="form-control" id="id_email" name="email" aria-describedby="emailHelp" required>
+                        </div>
+                      </div>
+                      <div class=" p-2">
+                        <div class="">
+                          <label for="id_nascimento" class="form-label" style="color: white;">DATA DE DASCIMENTO</label>
+                          <input type="text" class="form-control" id="id_nascimento" name="nascimento" placeholder="DD/MM/AAAA" required>
+                        </div>
+                        <div class="">
+                          <label for="id_cpf" class="form-label" style="color: white;">CPF</label>
+                          <input type="text" class="form-control" id="id_cpf" name="cpf" placeholder="000.000.000-00" required>
+                        </div>
+                        <div class="">
+                          <label label for="id_telefone" class="form-label" style="color: white;">TELEFONE</label>
+                          <input type="text" class="form-control" id="id_telefone" name="telefone" placeholder="(00) 0000-0000" maxlength="14" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="id_senha" class="form-label" style="color: white;">SENHA</label>
+                      <input type="password" class="form-control" id="id_senha" name="password1" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="id_confirmar_senha" class="form-label" style="color: white;">CONFIRMAR SENHA</label>
+                      <input type="password" class="form-control" id="id_confirmar_senha" name="password2" required>
+                    </div>
+
+                    {% if form.errors %}
+                    <div class="alert alert-danger">
+                      <strong>Erro no formulário:</strong>
+                      {% for field, error_list in form.errors.items %}
+                      <p>{{ field }}: {{ error_list.0 }}</p>
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-success btn-lg w-100"> <i
+                          class="fa-solid fa-floppy-disk"></i> Cadastrar</button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  {% include 'partials/footer.html' %}
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

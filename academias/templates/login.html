@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% include 'partials/head.html' %}
+{% load static %}
+<html lang="en">
+
+<body>
+
+    {% include 'partials/header.html' %}
+
+    <section>
+        <div class="bg-color" style="height: 100vh; overflow-x: hidden;">
+            <div class="container-login" style="width: 100%;">
+                <div class="row justify-content-center" style="margin-top: 10%;">
+                    <div class="col-md-4">
+                        <div class="card p-3"
+                            style="background-color: rgb(36, 36, 36) !important; height: 70vh !important;">
+                            <div class="card-header d-flex justify-content-center align-items-center">
+                                <img src="{% static 'img/logo.png' %}" class="img-logo" alt="">
+                            </div>
+                            <div class="card-body">
+                                <form method="post" action="{% url 'login' %}">
+                                    {% csrf_token %}
+                                    {% if error_message %}
+                                        <div class="alert alert-danger">
+                                            {{ error_message }}
+                                        </div>
+                                    {% endif %}
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label label-text">E-mail</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="Digite seu e-mail">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label label-text">Senha</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Digite sua senha">
+                                    </div>
+                                    {% comment %} <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input label-text" id="exampleCheck1">
+                                        <label class="form-check-label label-text" for="exampleCheck1">Lembre-me</label>
+                                    </div> {% endcomment %}
+                                    <div class="d-flex justify-content-center align-items-center p-3">
+                                        <a href="{% url 'atendente' %}" class="btn btn-lg btn-warning"
+                                            style="color: black; font-weight: bold;">ACESSAR</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'partials/footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+{% include 'partials/head.html' %}
+{% load static %}
+<html lang="en">
+<body>
+    <section>
+        <div class="bg-color">
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Logo</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="color-logo-yellow" aria-current="page" href="#">PÁGINA INICIAL</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="color-logo-white" href="loja">LOJA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="color-logo-white" href="#">PLANOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="color-logo-white" href="#">HORÁRIOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="color-logo-white" href="#">SOBRE NÓS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="color-logo-white" href="#">CONTATO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="color-logo-white" href="#">LOGIN</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-color">
+          <div style="padding-top: 10vh;">
+            <h2 class="text-center" style="color: white; font-weight: bold;">NOVIDADES</h2>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+              <img src="{% static 'img/produto-1.jpg' %}" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title text-center p-2">Kimono branco jiu-jítsu</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <p>R$ 329,00</p>
+                  <p>OU 4X R$ 82,48</p>
+                  <div class="d-flex justify-content-center align-items-center p-3">
+                      <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+              <img src="{% static 'img/produto-2.png' %}" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title text-center p-2">Creatina Monohidratada</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <p>R$ 111,99</p>
+                  <p>OU 4X R$ 28,00</p>
+                  <div class="d-flex justify-content-center align-items-center p-3">
+                      <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                  </div>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+              <img src="{% static 'img/produto-3.png' %}" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title text-center p-2">Pré Treino Bope 300g </h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <p>R$ 65,90</p>
+                  <p>OU 4X R$ 16,47</p>
+                  <div class="d-flex justify-content-center align-items-center p-3">
+                      <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+              <img src="{% static 'img/produto-21.png' %}" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title text-center p-2">Kimono Karate Branco</h5>
+                  <p class="card-text">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </p>
+                  <p>R$ 249,00</p>
+                  <p>OU 4X R$ 62,25</p>
+                  <div class="d-flex justify-content-center align-items-center p-3">
+                      <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                  </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-color">
+        <div class="p-5">
+        <h2 class="text-center" style="color: white; font-weight: bold;">JIU-JÍTSU</h2>
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+          <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+            <img src="{% static 'img/produto-1.jpg' %}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center p-2">Kimono branco jiu-jítsu</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <p>R$ 329,00</p>
+                <p>OU 4X R$ 82,48</p>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+            <img src="{% static 'img/produto-4.png' %}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center p-2">Kimono azul jiu-jítsu</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <p>R$ 329,00</p>
+                <p>OU 4X R$ 82,48</p>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+            <img src="{% static 'img/produto-5.png' %}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center p-2">Rash Guard Jiu-Jitsu - Preto</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <p>R$ 329,00</p>
+                <p>OU 4X R$ 82,48</p>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+            <img src="{% static 'img/produto-8.png' %}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center p-2">Moletom Masculino Jiu Jitsu</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <p>R$ 329,00</p>
+                <p>OU 4X R$ 82,48</p>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+            <img src="{% static 'img/produto-9.png' %}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center p-2">Faixa de Jiu-Jitsu Branca </h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <p>R$ 329,00</p>
+                <p>OU 4X R$ 82,48</p>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+            <img src="{% static 'img/produto-10.png' %}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center p-2">Camisa Usual Jiu-Jitsu </h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <p>R$ 329,00</p>
+                <p>OU 4X R$ 82,48</p>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+            <img src="{% static 'img/produto-25.png' %}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center p-2">Kimono Infantil Azul</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <p>R$ 329,00</p>
+                <p>OU 4X R$ 82,48</p>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+            <img src="{% static 'img/produto-26.png' %}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-center p-2">Tape Grips Finger Tape</h5>
+                <p class="card-text">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </p>
+                <p>R$ 329,00</p>
+                <p>OU 4X R$ 82,48</p>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                    <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-color">
+      <div class="p-5">
+      <h2 class="text-center" style="color: white; font-weight: bold;">KARATÊ</h2>
+      </div>
+      
+      <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        
+        <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+          <img src="{% static 'img/produto-21.png' %}" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center p-2">Kimono Karate Branco</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>R$ 249,00</p>
+              <p>OU 4X R$ 62,25</p>
+              <div class="d-flex justify-content-center align-items-center p-3">
+                  <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+          <img src="{% static 'img/produto-27.png' %}" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center p-2">Camiseta karateka - Branco</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>R$ 329,00</p>
+              <p>OU 4X R$ 82,48</p>
+              <div class="d-flex justify-content-center align-items-center p-3">
+                  <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+          <img src="{% static 'img/produto-22.png' %}" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center p-2">Luva de Karate MKS CBK</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>R$ 329,00</p>
+              <p>OU 4X R$ 82,48</p>
+              <div class="d-flex justify-content-center align-items-center p-3">
+                  <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+          <img src="{% static 'img/produto-28.png' %}" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center p-2">Caneleira Karate MKS CBK</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>R$ 329,00</p>
+              <p>OU 4X R$ 82,48</p>
+              <div class="d-flex justify-content-center align-items-center p-3">
+                  <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+          <img src="{% static 'img/produto-23.png' %}" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center p-2">Moletom Evolution Karatê  </h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>R$ 329,00</p>
+              <p>OU 4X R$ 82,48</p>
+              <div class="d-flex justify-content-center align-items-center p-3">
+                  <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+          <img src="{% static 'img/produto-24.png' %}" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center p-2">Faixa Adidas Karatê Elite</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>R$ 329,00</p>
+              <p>OU 4X R$ 82,48</p>
+              <div class="d-flex justify-content-center align-items-center p-3">
+                  <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+          <img src="{% static 'img/produto-29.png' %}" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center p-2"> Protetor Bucal Profissional</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>R$ 329,00</p>
+              <p>OU 4X R$ 82,48</p>
+              <div class="d-flex justify-content-center align-items-center p-3">
+                  <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+          <img src="{% static 'img/produto-30.png' %}" class="card-img-top img-fluid" alt="...">
+          <div class="card-body">
+              <h5 class="card-title text-center p-2">Protetor De Tórax Karatê</h5>
+              <p class="card-text">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p>R$ 329,00</p>
+              <p>OU 4X R$ 82,48</p>
+              <div class="d-flex justify-content-center align-items-center p-3">
+                  <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg-color">
+    <div class="p-5">
+    <h2 class="text-center" style="color: white; font-weight: bold;">MUAY THAI</h2>
+    </div>
+    
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      
+      <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+        <img src="{% static 'img/produto-11.png' %}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center p-2">Kit Luva De Boxe Muay Thai</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>R$ 249,00</p>
+            <p>OU 4X R$ 62,25</p>
+            <div class="d-flex justify-content-center align-items-center p-3">
+                <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+        <img src="{% static 'img/produto-12.png' %}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center p-2">Short Calção Muay Thai</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>R$ 329,00</p>
+            <p>OU 4X R$ 82,48</p>
+            <div class="d-flex justify-content-center align-items-center p-3">
+                <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+        <img src="{% static 'img/produto-13.png' %}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center p-2">Bandagem Muay Thai </h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>R$ 329,00</p>
+            <p>OU 4X R$ 82,48</p>
+            <div class="d-flex justify-content-center align-items-center p-3">
+                <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+        <img src="{% static 'img/produto-14.png' %}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center p-2">Protetor Bucal Simples </h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>R$ 329,00</p>
+            <p>OU 4X R$ 82,48</p>
+            <div class="d-flex justify-content-center align-items-center p-3">
+                <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+        <img src="{% static 'img/produto-15.png' %}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center p-2">Caneleira de Muay Thai</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>R$ 329,00</p>
+            <p>OU 4X R$ 82,48</p>
+            <div class="d-flex justify-content-center align-items-center p-3">
+                <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+        <img src="{% static 'img/produto-16.png' %}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center p-2">Protetor De Cabeça</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>R$ 329,00</p>
+            <p>OU 4X R$ 82,48</p>
+            <div class="d-flex justify-content-center align-items-center p-3">
+                <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+        <img src="{% static 'img/produto-29.png' %}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center p-2"> Protetor Bucal Profissional</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>R$ 329,00</p>
+            <p>OU 4X R$ 82,48</p>
+            <div class="d-flex justify-content-center align-items-center p-3">
+                <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+            </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem; height: 30rem; background-color: rgb(36, 36, 36); margin: 10px;">
+        <img src="{% static 'img/produto-31.png' %}" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+            <h5 class="card-title text-center p-2">Kit De Muay Thai Branco</h5>
+            <p class="card-text">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+            <p>R$ 329,00</p>
+            <p>OU 4X R$ 82,48</p>
+            <div class="d-flex justify-content-center align-items-center p-3">
+                <a href="#" class="btn btn-warning" style="color: black; font-weight: bold;">COMPRAR AGORA</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+{% include 'partials/footer.html' %}
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

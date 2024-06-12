@@ -37,7 +37,7 @@ class Produtos(models.Model):
     capa = models.ImageField(upload_to='capa/', null=True, blank=True)
     descricao =  models.CharField(max_length=255)
     valor = models.FloatField(max_length=4)
-    quantidade_vendas = models.IntegerField(max_length=20)
+    quantidade_vendas = models.IntegerField()
     slug = models.SlugField(unique=True, blank=True, null=True)
 
     def save(self, *args, **kwargs):

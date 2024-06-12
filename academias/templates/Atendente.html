@@ -10,10 +10,11 @@
     <section>
         <div class="bg-color" style="height: 100vh; overflow-x: hidden;">
             <div class="container-login justify-content-center w-100">
-                <div class="d-flex justify-content-center align-items-center w-100 d-flex justify-content-evenly" style="height: 100vh;">
-                    <div class="card p-3 bg-body-secondary">
+                <div class="d-flex justify-content-center align-items-center w-100 d-flex justify-content-evenly" style="height: 100vh; flex-wrap: wrap;">
+                    <!-- <div class="card p-3 bg-body-secondary">
                         <h5 class="card-title" style="color: black !important;">Ativar usuário</h5>
-                        <form>
+                        <form method="post" enctype="multipart/form-data" action="{% url 'atendente' %}">
+                            {% csrf_token %}
                             <div class="mb-3">
                                 <label for="id_nome" class="form-label">Nome</label>
                                 <input type="text" class="form-control" id="id_nome" name="nome">
@@ -32,18 +33,26 @@
                                   </tr>
                                 </thead>
                                 <tbody>
-                                  <tr>
-                                    <th scope="row">01</th>
-                                    <td>Cássio Coutinho Lima</td>
-                                    <td>Ativo</td>
-                                    <td>Paga</td>
-                                    <td>10/06</td>
-                                  </tr>
+                                    {% if usuario_encontrado %}
+                                    <tr>
+                                      <td>{{ usuario_encontrado.nome }}</td>
+                                      <td>{{ usuario_encontrado.email }}</td>
+                                      <td>
+                                        {% if usuario_encontrado.status %}
+                                          Ativo
+                                        {% else %}
+                                          Inativo
+                                        {% endif %}
+                                      </td>
+                                      <td>{{ usuario_encontrado.pagamento|date:"d/m/Y" }}</td>
+                                      <td>{{ usuario_encontrado.renovacao|date:"d/m/Y" }}</td>
+                                    </tr>
+                                  {% endif %}
                                 </tbody>
                               </table>
                         </div>
-                    </div>
-                    <div class="card p-3 bg-body-secondary">
+                    </div> -->
+                    <!-- <div class="card p-3 bg-body-secondary">
                         <h5 class="card-title" style="color: black !important;">Cadastrar produto</h5>
                         <form>
                             <div class="mb-3">
@@ -72,8 +81,9 @@
                               </div>
                             <button type="submit" class="btn btn-primary">Buscar</button>
                         </form>
-                    </div>
-                    <div class="card p-3 bg-body-secondary">
+                    </div> -->
+                    <!-- <div class="card p-3 bg-body-secondary">
+
                         <h5 class="card-title" style="color: black !important;">Alertas</h5>
                         <form>
                             <div class="mb-3">
@@ -82,6 +92,46 @@
                             </div>
                             <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </form>
+                    </div> -->
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div class="option-icons">
+                            <a href="#" class="card-title text-center">Buscar cliente</a>
+                        </div>
+                    </div>
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+                        <div class="option-icons" style="margin-left: 3vh;">
+                            <a href="#" class="card-title text-center">Produtos</a>
+                        </div>
+                    </div>
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <div class="option-icons" style="margin-left: 3vh;">
+                            <a href="#" class="card-title text-center">Relatórios</a>
+                        </div>
+                    </div>
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <div class="option-icons" style="margin-left: 3vh;">
+                            <a href="#" class="card-title text-center">Profissinais</a>
+                        </div>
+                    </div>
+                    <div class="icons-itens">
+                        <div class="option-icons">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="option-icons" style="margin-left: 3vh;">
+                            <a href="#" class="card-title text-center">Horários</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,8 +143,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
 </body>
 
 </html>
